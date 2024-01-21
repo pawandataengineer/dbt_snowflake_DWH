@@ -37,8 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_snowflake_DWH:
-    +post-hook:
-     - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
+    
     +materialized: view
     dim:
       +materialized: table
