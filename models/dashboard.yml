@@ -8,8 +8,8 @@ exposures:
    description: Executive Dashboard about Airbnb listings and hosts
 
    depends_on:
-     - ref('dim_listings_w_hosts')
-     - ref('mart_fullmoon_reviews')
+     - ref('dim_listing_with_host')
+     - ref('mart_fullmoon_review')
      
    owner:
     name: Zoltan C. Toth
